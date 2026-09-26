@@ -1,20 +1,22 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Navegacion : MonoBehaviour
 {
     public void Inicio()
     {
-        Debug.Log("Navegando a Inicio");
+        SceneManager.LoadScene("EscenaPrincipal");
     }
 
     public void Informacion()
     {
-        Debug.Log("Navegando a Información");
+        SceneManager.LoadScene("EscenaInformacion");
     }
 
     public void Salir()
     {
-        Debug.Log("Saliendo de la aplicación");
         Application.Quit();
+        Debug.Log("Saliendo de la aplicación");
     }
 }
+
